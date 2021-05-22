@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(230, 227, 227);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: #000;
+    position: relative;
+}
+
+.twitter {
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    color: rgb(5, 175, 231);
+    border-radius: 50%;
+    background: rgb(230, 227, 227);
+    margin: auto 20px;
+    padding: 12.5px;
+    box-shadow: 7px 7px 10px #9b9da0, -7px -7px 10px white;
+}
+
+
+.form {
+    padding: 40px;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    background: rgb(230, 227, 227);
+    box-shadow: 14px 14px 20px gray, -14px -14px 20px white;
+}
+
+h1 {
+    color: rgb(19, 162, 209);
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+input, button {
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    font-size: 16px;
+    padding: 10px;
+
+
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    justify-content: center;
+    background-color: rgb(3, 94, 94);
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(100, 175, 175);
+    color: rgb(2, 46, 46);
+}
+
+.copyright {
+    margin: 17px;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: wavy;
+}
+
+.triangle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+}
+
+.triangle1 {
+    clip-path: polygon(33% 0, 14% 71%, 100% 47%);
+    background: rgb(3, 94, 94);
+    right: 59%;
+    top: 68%;
+}
+
+.triangle2 {
+    clip-path: polygon(63% 2%, 89% 69%, 11% 57%);
+    background: rgb(125, 206, 206);
+    left: 59%;
+    bottom: 66%;
+}
+
+.move-down {
+    transform: translate(5%,228%);
+    transition: transform 3s ease;
+}
+
+.move-up {
+    transform: translate(-12%,-216%);
+    transition: transform 3s ease;
+}
+
+.move {
+    transform: translate(0);
+    transition: transform 3s ease;
+}
